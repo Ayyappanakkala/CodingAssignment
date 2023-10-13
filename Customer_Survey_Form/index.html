@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+
+</head>
+<body>
+    <header class="header">
+        <h1>Survey Form</h1>
+    </header>
+    <div class="container">
+        <form class="form" >
+            <label for="">First Name</label>
+            <br>
+            <input type="text" placeholder="Type here" class="fn">
+            <br>
+            <label for="">Last Name</label>
+            <br>
+            <input type="text" placeholder="Type here" class="fn">
+            <br>
+            <label for="">Date of Birth</label>
+            <input type="date" placeholder="dd-mm-yyyy" class="fn">
+            <br>
+            <label for="country">Country</label>
+            <br>
+            <select name="country" id="country" class="fn">
+                <option value="Select">Select</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+            </select>
+            <br>
+            <label for="gender">Gender</label>
+            <br>
+            <div class="radio">
+                <input type="checkbox" name="gender" value="Male">Male
+                <input type="checkbox" name="gender" value="Female">Female
+                <input type="checkbox" name="gender" value="Other">Other
+            <br>
+            <label for="profession">Profession</label>
+            <input type="text" id="profession" placeholder="Type here" class="fn">
+            <br>
+            <label for="">Email</label>
+            <br>
+            <input type="email" placeholder="Enter mail" class="fn">
+            <br>
+            <label for="">Mobile Number</label>
+            <br>
+            <input type="text" placeholder="Enter Mobile" class="fn">
+
+            <div class="sub">
+                <input type="submit"><span id="slash"> /</span>
+                <input type="reset">
+            </div>
+        </form>
+    </div>
+    <div id="popup" class="popup">
+        <h2>Survey Form Data</h2>
+        <p><strong>First Name:</strong> <span id="popupFirstName"></span></p>
+        <p><strong>Last Name:</strong> <span id="popupLastName"></span></p>
+        <p><strong>Date of Birth:</strong> <span id="popupDob"></span></p>
+        <p><strong>Country:</strong> <span id="popupCountry"></span></p>
+        <p><strong>Gender:</strong> <span id="popupGender"></span></p>
+        <p><strong>Profession:</strong> <span id="popupProfession"></span></p>
+        <p><strong>Email:</strong> <span id="popupEmail"></span></p>
+        <p><strong>Mobile Number:</strong> <span id="popupMobile"></span></p>
+        <button class="Close" onclick="closePopup()">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
